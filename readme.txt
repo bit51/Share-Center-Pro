@@ -58,6 +58,9 @@ Add sharing buttons for Buffer, Facebook, Google +1, LinkedIn, Pinterest, and Tw
 
 == Changelog ==
 
+= Dev =
+* Updated styles center elements rather than justify
+
 = 2.4.3 =
 * Fixed Bit51 feed with improved error handling
 
