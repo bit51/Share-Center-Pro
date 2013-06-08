@@ -1,6 +1,6 @@
 
 === Share Center Pro ===
-Contributors: Bit51
+Contributors: Bit51, ChrisWiegman
 Donate link: http://bit51.com/software/share-center-pro/
 Tags: Google+, Google plus, Twitter, Facebook, linkedIn, StumbleUpon, Pinterest, Buffer, asynchronous, performance, bit.ly, shortlink, share, widget, social
 Requires at least: 3.0
@@ -33,6 +33,7 @@ Add sharing buttons for Buffer, Facebook, Google +1, LinkedIn, Pinterest, and Tw
 
 = Translations =
 * Slovak by Branco of <a href="http://webhostinggeeks.com/blog/">WebHostingGeeks.com</a>
+* Spanish by <a href="http://pabloromero.org">Pablo Romero</a>
 
 == Installation ==
 
@@ -57,6 +58,9 @@ Add sharing buttons for Buffer, Facebook, Google +1, LinkedIn, Pinterest, and Tw
 3. Display buttons anywhere you want with a widget.
 
 == Changelog ==
+
+= Dev =
+* Spanish translation by <a href="http://pabloromero.org">Pablo Romero</a>
 
 = 2.4.4 =
 * Updated styles center elements rather than justify
