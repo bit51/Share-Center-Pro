@@ -3,7 +3,7 @@
 	Plugin Name: Share Center Pro
 	Plugin URI: http://bit51.com/software/share-center-pro/
 	Description: Add common social sharing services in a widget to be used anywhere on your page or at the bottom of your posts or other content.
-	Version: 2.4.5
+	Version: Dev
 	Text Domain: share-center-pro
 	Domain Path: /languages
 	Author: Bit51
@@ -112,17 +112,17 @@ if ( ! class_exists( 'bit51_scp' )) {
 			add_filter( 'the_content', array( &$this, 'scp_addtocontent' ), 25 );
 
 			//Enqueue the stylesheet
-			if ( $scpoptions['usecss'] == 1 ) {
+			if ( isset( $scpoptions['usecss'] ) && $scpoptions['usecss'] == 1 ) {
 				add_action( 'wp_print_styles', array( &$this, 'scp_addstylesheet' ) );
 			}
 
-			if ( $scpoptions['fbog'] == 1 || $scpoptions['tcmd'] == 1 ) {
+			if ( ( isset( $scpoptions['fbog'] ) && $scpoptions['fbog'] == 1 ) || ( isset( $scpoptions['tcmd'] ) && $scpoptions['tcmd'] == 1 ) ) {
 
 				//Add facebook meta to header
 				add_action( 'wp_head', array( &$this, 'scp_addmeta' ) );
 
 				//remove jetpack OpenGraph (if needed)
-				if ( $scpoptions['fbog'] == 1 ) {
+				if ( isset( $scpoptions['fbog'] ) && $scpoptions['fbog'] == 1 ) {
 
 					$active_plugins = get_option( 'active_plugins', array() );
 
