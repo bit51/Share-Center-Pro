@@ -364,7 +364,7 @@ if ( ! class_exists( 'bit51_scp' )) {
 						break;
 					case 'Facebook':
 						if ( $scpoptions['facebook'] == 1 ) {
-							$buttons .= "<div class=\"scpFacebook\"><fb:like href=\"" . urlencode( $share_url ) . "\" send=\"false\" layout=\"box_count\" width=\"450\" show_faces=\"false\" font=\"arial\"></fb:like></div>\n";
+							$buttons .= "<div class=\"scpFacebook\"><div class=\"fb-like\" data-href=\"" . urldecode( $share_url ) . "\" data-send=\"false\" data-layout=\"box_count\" data-width=\"450\" data-show-faces=\"false\"></div></div>\n";
 						}
 						break;
 					case 'Google':
